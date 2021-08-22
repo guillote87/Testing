@@ -1,0 +1,169 @@
+@import url(header.css);
+
+:root {
+    --blanco: #ffffff;
+    --grisClaro: #dcdcdc;
+    --gris:#9f9f9f;
+    --grisOscuro: #5B5B5B;
+    --negro: #060606;
+    --violeta: #a11aa0;
+}
+body{
+    background-color: #9f9f9f;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+main img{
+    width: 150px;
+}
+main h1{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+article img{
+    width: 100px;
+}
+
+article .contenedor{
+    border: solid black 2px;
+    width: auto;
+}
+article {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid blue 1.5px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+article input{
+    width: 45px;
+    height: 40px;
+    border: black solid 1px;
+    border-radius: 20%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.desc-art-carrito{
+   
+    width: 250px;
+}
+.cant-art-carrito{
+    
+    width: 100px;
+    text-align:center;
+}
+.precioUni{
+    width: 150px;
+}
+
+
+.Envio{
+    color: green;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.precioUni{
+    font-size: 15px;
+    color:rgb(7, 17, 8);
+    text-align: center;
+}
+.precioUni p{
+    margin-right: 10px;
+}
+
+.pay-method-container{
+text-align: center;
+margin-top: 10px;
+
+}
+.Comprar{
+    margin-top: 15px;
+    width: 50%;
+    height: 20px;
+    
+}
+button:hover {
+   background-color: var(--violeta);
+   color:white
+}
+.buy-detail{
+    
+    text-align: center;
+    
+    margin-top: 5px;  
+}
+.shipping ,.price{
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+}
+.price .total{
+    font-weight: bold;
+}
+
+
+@media (min-width: 482px){
+
+    .precioUni{
+        font-size: 18px;
+        color:rgb(7, 17, 8);
+       display: flex;
+       justify-content: center;
+    }
+    .cant-art-carrito{
+        
+        width: 170px;
+        text-align:center;
+    }
+    article img{
+        width: 130px;
+    }
+ 
+   
+}
+@media (min-width: 783px){
+
+    .precioUni{
+    font-size: 25px;
+   display: flex;
+       justify-content: center;
+    }
+    .cant-art-carrito{
+      
+        width: 140px;
+        text-align:center;
+    }
+    section article {  
+        width: 80%;
+    }
+    main h1{
+            margin-left: 10%;
+    }
+    article img{
+        width: 160px;
+    }
+    .Comprar{
+        margin-top: 15px;
+        width: 30%;
+        height: 20px;
+        
+    }
+}

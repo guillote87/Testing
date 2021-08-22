@@ -1,27 +1,19 @@
 const express = require("express")
-app = express()
-const path = require("path")
+const app = express()
 
-const publicPath = path.resolve(__dirname, "./public")
+app.set("view engine", "ejs")
+const productRoute = require ("./routes/product")
+const mainRoute = require ("./routes/index")
+app.use(express.static("./public"))
 
-app.use(express.static(publicPath))
 
 
+app.listen(process.env.PORT||3000, ()=>{
+    console.log('Servidor funcionando');
+});
 
-app.listen(3000,()=>{
-    console.log ("Servidor Iniciado en puerto 3000")
-})
+app.use("/", mainRoute)
+app.use ("/productos",productRoute)
 
-app.get("/",(req,res)=>{
-    res.sendFile(path.resolve("./views/index.html"))
-})
-
-app.get("/productDetail",(req,res)=>{
-    res.sendFile(path.resolve("./views/productDetail.html"))
-})
-
-app.get("/login", (req,res)=>{
-    res.sendFile(path.resolve("./views/login.html"))
-})
 
 

@@ -1,5 +1,6 @@
 @import url(header.css);
 @import url(footer.css);
+
 :root {
     --blanco: #ffffff;
     --grisClaro: #dcdcdc;
@@ -12,23 +13,16 @@
     margin: 0px;
 }
 
-body {
-    font-family: 'Rajdhani', sans-serif;
-    background-color:var(--gris);
-}
+
 
 .contenedor {
     width: 98%;
     margin: auto;
 }
 
-.banner {
-    margin-top: 150px;
-}
-
-.banner img {
-    width: 100%;
-    height: 100%;
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color:var(--gris);
 }
 
 .products {

@@ -1,0 +1,75 @@
+<%- include("./partials/header.ejs",{css : "/css/productCart.css"})%>
+<main>
+
+    <section>
+
+        <h1>Tu carrito</h1>
+        <article>
+            <img src="/images/productos/2.jpg" alt="">
+            <div class="desc-art-carrito">
+                <h2>Remera Nirvana</h2>
+                <p>Color: Negro</p>
+                <p>Talle: M</p>
+            </div>
+            <div class="cant-art-carrito">
+                <i class="fas fa-minus"></i>
+                <input type="text" value="1">
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="precioUni">
+                <p>$ 2500</p>
+                <a class="trash" href="#"><i class="far fa-trash-alt"></i></a>
+            </div>
+        </article>
+
+        <article>
+            <img src="/images/productos/1.jpg" alt="">
+            <div class="desc-art-carrito">
+                <h2>Remera RadioHead</h2>
+                <p>Color: Negro</p>
+                <p>Talle: S</p>
+            </div>
+            <div class="cant-art-carrito">
+                <i class="fas fa-minus"></i>
+                <input type="text" value="2">
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="precioUni">
+                <p>$ 2500</p>
+                <a class="trash" href="#"><i class="far fa-trash-alt"></i></a>
+            </div>
+        </article>
+    </section>
+    
+    <section class="pago-envio">
+        <section class="buy-detail">
+            <div class="shipping">
+                <p>Envio a C.P 1826</p>
+                <p class="Envio">Gratis</p>
+            </div>
+            <div class="price">
+                <p>Total con envio</p>
+                <p class="total">$ 5000</p>
+            </div>
+        </section>
+   
+        <div class="pay-method-container">
+            <h3>Método de pago</h3>
+            <select class="pay-method" name="pay-method" id="pay-method">
+                <option value="credit">Crédito</option>
+                <option value="cash">Efectivo</option>
+                <option value="debit">Débito</option>
+            </select>
+            <select class="pay-options" name="pay-options" id="pay-options">
+                <option value="visa">Visa</option>
+                <option value="masterCard">Master Card</option>
+                <option value="americanExpress">American Express</option>
+            </select>
+            <div>
+                <button class="Comprar" type="submit">Comprar ahora</button>
+            </div>
+        </div>
+    </section>
+      
+</main>
+<%- include("./partials/footer.ejs")%>
