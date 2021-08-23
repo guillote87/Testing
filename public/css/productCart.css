@@ -34,6 +34,7 @@ main h1{
 }
 article img{
     width: 100px;
+    margin-right: 15px;
 }
 
 article .contenedor{
@@ -60,18 +61,16 @@ article input{
 
 }
 .desc-art-carrito{
-   
     width: 250px;
+    
 }
 .cant-art-carrito{
-    
     width: 100px;
     text-align:center;
 }
 .precioUni{
     width: 150px;
 }
-
 
 .Envio{
     color: green;
@@ -89,25 +88,39 @@ article input{
     margin-right: 10px;
 }
 
-.pay-method-container{
-text-align: center;
-margin-top: 10px;
+.pay-method-container{ 
+    text-align: center;
+    margin-top: 10px;
+}
+.pay-method-container h3{
+    font-size:24px ;
+}
+.pay-method-container select{
+    font-size: 20px;
+}
+.pago-envio{
+background-color:white;
+padding: 10px;
 
 }
-.Comprar{
+div.comprar{
+    width: 100%;
+    text-align: center;
+ }
+
+.comprar button{
     margin-top: 15px;
-    width: 50%;
-    height: 20px;
-    
+    width: 80%;
+    font-size: 25px;
+    padding: 10px 28px 9px ;    
 }
 button:hover {
    background-color: var(--violeta);
    color:white
 }
 .buy-detail{
-    
-    text-align: center;
-    
+    border-bottom: var(--violeta) 1px solid;
+    text-align: center;    
     margin-top: 5px;  
 }
 .shipping ,.price{
@@ -129,7 +142,6 @@ button:hover {
        justify-content: center;
     }
     .cant-art-carrito{
-        
         width: 170px;
         text-align:center;
     }
@@ -160,10 +172,26 @@ button:hover {
     article img{
         width: 160px;
     }
-    .Comprar{
-        margin-top: 15px;
-        width: 30%;
-        height: 20px;
-        
+    .comprar{
+        width: 50%;
     }
+    .shipping, .price{
+        justify-content: flex-end;  
+    }
+    .shipping p, .price p{
+      margin-left: 25px;
+    }
+    .pay-method-container{ 
+    display: flex;
+    justify-content:flex-end ;
+    }
+    .pay-method-container h3{
+        margin-right: 45px;
+    }
+    div.comprar{
+                text-align: right;
+     }
+     .comprar button{
+         width: 30%;
+     }
 }
