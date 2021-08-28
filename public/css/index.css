@@ -113,7 +113,10 @@ article h4 {
     font-size: 35px;
     color: rgba(107, 32, 135, 0.75);
 }
-
+.main-article{
+    border-top: var(--violeta) 2px solid;
+    align-items: center;
+}
 
 
 

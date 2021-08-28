@@ -1,32 +1,19 @@
-
 <%- include("./partials/header.ejs",{css : "/css/index.css"})%>
-    <main>
+<main>
+   
     <section class="products">
+        <% for (i=0; i< products.length; i++){ %>
         <article>
-            <a href="/products/detail"><img src="/images/productos/1.jpg" alt=""></a>
+            <a href="/products/<%= products[i].id%>"><img src="/images/productos/<%= products[i].image %>" alt=""></a>
             <div class="main-article">
-                <p class="price">$ 2500</p>
-                <p class="discount">20% DESC</p>
-                <h4 class="description"> REMERA NIRVANA</h4>
+                <p class="price">$ <%= products[i].price%></p>
+                <p class="discount"> TALLE <%= products[i].size%></p>
+                <h4 class="description"> <%= products[i].name%></h4>
             </div>
-        </article>
-        <article>
-            <img src="/images/productos/2.jpg" alt="">
-            <div class="main-article">
-                <p class="price">$ 1580</p>
-                <p class="discount">20%</p>
-                <h4 class="description"> Remera Daft Punk</h4>
-            </div>
-        </article>
-        <article>
-            <img src="/images/productos/3.jpg" alt="">
-            <div class="main-article">
-                <p class="price">$ 3500</p>
-                <p class="discount">20%</p>
-                <h4 class="description"> Remera Superman</h4>
-            </div>
-        </article>
+        </article>   
+        <%}%>  
     </section>
+ 
     
         <div class="contenedor">
             <div class="fila">

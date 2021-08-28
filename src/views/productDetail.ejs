@@ -65,20 +65,7 @@
                     <p class="precio-interes">$1242</p>
                     <p class="talle-interes">Talles disponibles</p>
                     <div class="contenedor-div-talle">
-                        <!-- <div class="div-talle">
-                            <p>S</p>
-                        </div>
-                        <div class="div-talle">
-                            <p>M</p>
-                        </div>
-                        <div class="div-talle">
-                            <p>L</p>
-                        </div>
-                        <div class="div-talle">
-                            <p>XL</p>
-                        </div>
-                        -->
-                        <div class="div-talle">
+                              <div class="div-talle">
                             <p>XS</p>
                             <p>S</p>
                             <p>M</p>
@@ -99,19 +86,22 @@
                 <p> > </p> <a href="#">Remera Radiohead</a>
             </div>
             <div class="titulo-producto">
-                <h1>Remera Radiohead</h1>
+                <h1><%= product.name%></h1>
+               
             </div>
             <div class="contenedor-fotos">
                 <div class="remeras-lateral">
-                    <a href="#"><img class="remera2" src="/images/remeras/radioHeadBlanca.jpg" alt="Blanca"></a>
-                    <a href="#"><img class="remera2" src="/images/remeras/remeraRadioHead.jpg" alt="Blanca"></a>
+                    <a href="#"><img class="remera2" src="/images/productos/<%= product.image%>" alt="Blanca"></a>
+                    <a href="#"><img class="remera2" src="/images/productos/<%= product.image2%>" alt="Blanca"></a>
                 </div>
-                <img class="remera" src="/images/remeras/remeraRadioHead.jpg" alt="#">
+                <img class="remera" src="/images/productos/<%= product.image%>" alt="#">
             </div>
         </section>
         <section class="detalles">
             <div class="precio">
-                <h2>$900</h2><span>x 6 cuotas sin interés</span>
+                <h2><%= product.description%></h2> <br>
+                <br>
+                <h2>$ <%= product.price%></h2><span>x 6 cuotas sin interés</span>
             </div>
             <form action="#" method="POST" class="form">
                 <label for="talle"></label>
