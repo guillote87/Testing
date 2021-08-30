@@ -122,6 +122,14 @@ section.interes h2 {
     text-align: center;
 }
 */
+
+.edit{
+text-align: right;
+}
+.edit a, button{
+background-color: none;
+color: var(--violeta);
+}
 .producto {
      margin-bottom: 10px;
      margin: auto;

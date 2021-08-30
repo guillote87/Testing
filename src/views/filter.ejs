@@ -4,7 +4,7 @@
     <section class="products">
         <% for (i=0; i< product.length; i++){ %>
         <article>
-            <a href="/products/<%= product[i].id%>"><img src="/images/productos/<%= product[i].image %>" alt=""></a>
+            <a href="#"><img src="/images/productos/<%= product[i].image %>" alt=""></a>
             <div class="main-article">
                 <p class="price">$ <%= product[i].price%></p>
                 <p class="discount"> TALLE <%= product[i].size%></p>
@@ -19,7 +19,7 @@
             <div class="fila">
                 <div class="small">
                     <a href="/products/filter/music"><img src="/images/categorias/cat-rock2.jpg" alt="Categoria Rock"></a>
-                    <a class="centrado" href="#"> Musica</a>
+                    <a class="centrado" href="#"> Rock</a>
                 </div>
                 <div class="small">
                     <a href="/products/filter/movies"><img src="/images/categorias/cat-peliculas2.jpg" alt="Categoria Rock"></a>

@@ -99,6 +99,12 @@
         </section>
         <section class="detalles">
             <div class="precio">
+                <div class="edit">
+                   <a href="/products/edit/<%= product.id%>"><i class="fas fa-edit"></i></a> 
+                   <form action="/products/<%= product.id %>?_method=DELETE" method="POST" style="display: inline-flex">
+                    <button type="submit" class="action-button delete"><i class="fas fa-trash-alt"></i></button>
+                </form>
+                                </div>
                 <h2><%= product.description%></h2> <br>
                 <br>
                 <h2>$ <%= product.price%></h2><span>x 6 cuotas sin interés</span>

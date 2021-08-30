@@ -3,34 +3,34 @@
             <section>
                 <div class="create-box">
                     <h2>Agregar producto</h2>
-                    <form class="create-form" action="/products" method="POST">
+                    <form class="create-form" action="/products/<%= productToEdit.id%>?_method=PUT" method="POST">
                         <div class="control-form">
-                            <input name="name" type="text" class="control" placeholder="Nombre de tu producto">
+                            <input name="name" type="text" value = "<%= productToEdit.name %>" class="control" placeholder="Nombre de tu producto">
                         </div>
                         <div class="control-form">
-                            <textarea name="description" class="control"></textarea>
+                            <input name="description" type="text" value="<%= productToEdit.description %>"class="control">
                         </div>
                         <div class="control-form">
-                            <input name="image" type="file" accept=".jpg, .png" class="control">
+                            <input name="image" type="file" value="<%= productToEdit.image %>" accept=".jpg, .png" class="control">
                         </div>
                         <div class="control-form">
-                            <input name="image2" type="file" accept=".jpg, .png" class="control">
+                            <input name="image2" type="file" value="<%= productToEdit.image2 %>" accept=".jpg, .png" class="control">
                         </div>
                         <div class="control-form">
-                            <select name="category" class="control">
+                            <select name="category" value="<%= productToEdit.category %>" class="control">
                                 <option value="music">Musica</option>
                                 <option value="movies">Peliculas</option>
                             </select>
                         </div>
                         <div class="control-form">
-                            <select name="color" class="control">
+                            <select name="color" value="<%= productToEdit.color %>" class="control">
                                 <option value="Negro">Negro</option>
                                 <option value="Gris">Gris</option>
                                 <option value="Blanco">Blanco</option>
                             </select>
                         </div>
                         <div class="control-form">
-                            <select name="size" class="control">
+                            <select name="size"value="<%= productToEdit.size %>" class="control">
                                 <option>Talle</option>
                                 <option value="S">S</option>
                                 <option value="M">M</option>
@@ -39,7 +39,7 @@
                             </select>
                         </div>
                         <div class="control-form">
-                            <input name="price" type="tel" placeholder="Precio" class="control">
+                            <input name="price" type="tel" value="<%= productToEdit.price %>" placeholder="Precio" class="control">
                         </div>
                         <button type="submit" class="control">Agregar</button>
                     </form>
