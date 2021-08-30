@@ -123,12 +123,17 @@ section.interes h2 {
 }
 */
 
-.edit{
-text-align: right;
+
+.edit button{
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: var(--violeta);
 }
-.edit a, button{
-background-color: none;
+.edit a{
+
 color: var(--violeta);
+
 }
 .producto {
      margin-bottom: 10px;
@@ -258,6 +263,9 @@ color: var(--violeta);
 
 @media (min-width:780px) {
     
+    .edit{
+        text-align: right;
+        }
     section.interes {
         display: block;
         padding: 5px;
