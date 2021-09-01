@@ -1,6 +1,6 @@
 <%- include("./partials/header.ejs",{css : "/css/index.css"})%>
 <main>
-   
+
     <section class="products">
         <% for (i=0; i< product.length; i++){ %>
         <article>
@@ -10,7 +10,7 @@
                 <p class="discount"> TALLE <%= product[i].size%></p>
                 <h4 class="description"> <%= product[i].name%></h4>
             </div>
-        </article>   
+        </article>
         <%}%>  
     </section>
  
