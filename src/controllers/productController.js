@@ -8,6 +8,7 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 
 const productController = {
+ 
     detail: (req, res) => {
         let id = req.params.id
         let product = products.find(product => product.id == id)
@@ -46,7 +47,7 @@ const productController = {
         let productJSON = JSON.stringify(products)
         fs.writeFileSync(productsFilePath, productJSON)
 
-        res.redirect("/")
+        res.redirect("/",{productJSON})
     },
 
     /* Update - Form to edit*/
@@ -76,7 +77,7 @@ const productController = {
         let productJSON = JSON.stringify(products)
         fs.writeFileSync(productsFilePath, productJSON)
 
-        res.redirect("/products")
+        res.redirect("/")
     },
     // Delete - Delete one product from DB
 	destroy: (req, res) => {
