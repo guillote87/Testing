@@ -157,7 +157,7 @@ color: var(--violeta);
     margin-left: 0.8rem;
 }
 
-.titulo-producto h1 {
+.titulo-producto input ,h2{
     text-align: center;
     font-size: 2rem;
     margin-top: 1rem;
@@ -243,7 +243,11 @@ color: var(--violeta);
     background-color: var(--blanco);
     margin: 10px;
 }
-
+.sin-formato{
+    background-color: transparent  ;
+    border:none;
+    font-size :18px;
+}
 .mercado {
     width: 60%;
 }
