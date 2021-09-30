@@ -92,46 +92,6 @@
 </main>
 <footer>
 
-    <form class="create-form" action="/users/cart/<%= product.id%>?_method=PUT" method="POST">
-        <div class="control-form">
-            <input name="name" type="text" value = "<%= product.name %>" class="control" placeholder="Nombre de tu producto">
-        </div>
-        <div class="control-form">
-            <input name="description" type="text" value="<%= product.description %>"class="control">
-        </div>
-        <div class="control-form">
-            <input name="image" type="file" value="<%= product.image %>" accept=".jpg, .png" class="control">
-        </div>
-        <div class="control-form">
-            <input name="image2" type="file" value="<%= product.image2 %>" accept=".jpg, .png" class="control">
-        </div>
-        <div class="control-form">
-            <select name="category" value="<%= product.category %>" class="control">
-                <option value="music">Musica</option>
-                <option value="movies">Peliculas</option>
-            </select>
-        </div>
-        <div class="control-form">
-            <select name="color" value="<%= product.color %>" class="control">
-                <option value="Negro">Negro</option>
-                <option value="Gris">Gris</option>
-                <option value="Blanco">Blanco</option>
-            </select>
-        </div>
-        <div class="control-form">
-            <select name="size"value="<%= product.size %>" class="control">
-                <option>Talle</option>
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-            </select>
-        </div>
-        <div class="control-form">
-            <input name="price" type="tel" value="<%= product.price %>" placeholder="Precio" class="control">
-        </div>
-        <button type="submit" class="control">Agregar</button>
-    </form>
     <section>
         <h3>Copyright © 1999-2020 Nicotine S.R.L.</h3>
         <div class="iconos-redes">

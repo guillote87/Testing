@@ -1,0 +1,9 @@
+<%- include("./partials/header.ejs",{css : "/css/profile.css"})%>
+<main>
+    <div class="data">
+        <h3>Hi <%= user.name %></h3>
+        <img src="/images/users/<%= user.avatar %>" alt="">
+        <p> <%= user.email %></p>
+    </div>
+</main>
+<%-include("./partials/footer")%>

@@ -3,25 +3,58 @@
         <section>
             <div class="register-box">
                 <h2>¡Crea tu cuenta y elegí tu diseño favorito!</h2>
-                <form action="#" method="POST" class="register-form">
+                <form action="/users/register" method="POST" class="register-form" enctype="multipart/form-data">
                     <div class="control-form">
-                        <input type="text" name="name" class="control" placeholder="Ingresá tu nombre y apellido">
+                        <input type="text" name="name" class="control" value = "<%= locals.oldData ? oldData.name : null %>" placeholder="Ingresá tu nombre y apellido" is-invalid>
                     </div>
+                    <% if (locals.errors && errors.name) {%>
+                        <div class= "text-danger">
+                            <%=errors.name.msg %>
+                    </div>
+                    <% } %> 
                     <div class="control-form">
-                        <input type="email" name="email" class="control" placeholder="Ingresá un e-mail">
+                        <input type="email" name="email" value = "<%= locals.oldData ? oldData.email : null %>"class="control" placeholder="Ingresá un e-mail">
                     </div>
+                    <% if (locals.errors && errors.email) {%>
+                        <div class= "text-danger">
+                            <%=errors.email.msg %>
+                    </div>
+                    <% } %> 
                     <div class="control-form">
                         <input type="password" name="pass" class="control" placeholder="Elegí una contraseña">
                     </div>
-                    <div class="control-form">
-                        <input type="password" name="pass" class="control" placeholder="Repetí la contraseña">
+                    <% if (locals.errors && errors.pass) {%>
+                        <div class= "text-danger">
+                            <%=errors.pass.msg %>
                     </div>
+                    <% } %> 
+                    <div class="control-form">
+                        <input type="password" name="pass2"class="control" placeholder="Repetí la contraseña">
+                    </div>
+                    <% if (locals.errors && errors.pass) {%>
+                        <div class= "text-danger">
+                            <%=errors.pass.msg %>
+                    </div>
+                    <% } %> 
+                    <div class = "control-form">
+                        <input type="file"name = "avatar">
+                    </div>
+                    <% if (locals.errors && errors.avatar) {%>
+                        <div class= "text-danger">
+                            <%=errors.avatar.msg %>
+                    </div>
+                    <% } %> 
                     <div class="control-form">
                         <label class="control">
                             <h2>Pone tu cumpleaños</h2>
                             <input type="date" name="birthday" min="1921-01-01" class="control">
                         </label>
                     </div>
+                    <% if (locals.errors && errors.birthday) {%>
+                        <div class= "text-danger">
+                            <%=errors.birthday.msg %>
+                    </div>
+                    <% } %> 
                     <button type="submit" class="send-button">Enviar</button>
                 </form>
             </div>

@@ -22,13 +22,18 @@
                 <button><i class="fas fa-search"></i></button>
             </div>
             <div class="login">
-                <div class="log-web">
-                    <a href="/users/login">Login</a>
-                    <a href="#">|</a>
-                    <a href="/users/register">Registrarse</a>
-                    
-                    
+                <% if (locals.isLogged){ %>
+                <div class=profile>
+                    <h2>Hola <%= locals.userLogged.name %></h2>
+              
                 </div>
+                <%} else { %>
+                    <div class="log-web">
+                        <a href="/users/login">Login</a>
+                        <a href="#">|</a>
+                        <a href="/users/register">Registrarse</a>     
+                    </div>
+                    <% } %>
                 <div class="log-movil" >
                     <a  href="/users/login"><i class="far fa-user"></i></a>
                     <a  href="/users/cart"><i class="fas fa-shopping-bag"></i></a>

@@ -4,6 +4,17 @@ header {
  background-color: black;
 }
 
+.profile{
+    color: white;
+    font-size: 10px;
+  
+}
+.profile img{
+    width: 15%;
+    border-radius: 60%;
+    border: green solid 2px;
+    background-color: white;
+}
 header a {
  text-decoration: none;
  color: white;
@@ -123,6 +134,10 @@ header label {
 .banner img {
     width: 100%;
     height: 100%;
+}
+.text-danger{
+    color:red;
+    font-weight: bolder;
 }
 
 @media (min-width:780px){

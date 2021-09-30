@@ -1,0 +1,38 @@
+[
+ {
+  "id": 1,
+  "name": "jesica comas",
+  "email": "jesi@gmail.com",
+  "pass": "$2a$10$k8aExaJy8VqunDn6kR2LiOlylaxnxGuCjZvJKAEuip1Dn0bTER0Wy",
+  "pass2": "$2a$10$Ag6ctL2c.Zwa9q9iY9LrOuRyS4jd1jwZWlVvlq11TZCES2CacwEp.",
+  "birthday": "2021-09-14",
+  "avatar": "1632956478058.jpg"
+ },
+ {
+  "id": 2,
+  "name": "jesica comas",
+  "email": "jesi@hotmail.com",
+  "pass": "$2a$10$oJV/XtRij9VHpZXZacrVUO7huNjwcpBadHE9/v53bC4o8vZ1F8SAa",
+  "pass2": "$2a$10$IQ/QnRRn.hssCJZ/hktmuu1GKrKEcCHgdphad3sYINHnNokcWRosO",
+  "birthday": "2021-09-21",
+  "avatar": "1632957001851.jpg"
+ },
+ {
+  "id": 3,
+  "name": "Guillermo",
+  "email": "guillermo27@gmail.com",
+  "pass": "$2a$10$zKufGnQnNZ05Uu2NrW4e4.HJTVF2IoWum3wCn13QPT2jZcPLkpDGm",
+  "pass2": "$2a$10$QDB6XZoKftMTlqaHHcw0aOdX9DjUBClAgcdWiztSdJs/R.bHOyRpu",
+  "birthday": "2021-09-14",
+  "avatar": "1632957183777.jpg"
+ },
+ {
+  "id": 4,
+  "name": "rick",
+  "email": "rick@morty.com.ar",
+  "pass": "$2a$10$0n.omrlrJI2H0ZjBFVqgDuJsAERn42sUTOF/dIyaBATu7D.8mj.qe",
+  "pass2": "$2a$10$MDYt52nteDQuw.3oJpPL...shcK0zSCgIgyAxLGs2GgDyL5M7yq2a",
+  "birthday": "2021-08-30",
+  "avatar": "1632961545786.jpg"
+ }
+]

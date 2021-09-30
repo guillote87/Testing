@@ -1,15 +1,19 @@
 <%-include("./partials/header.ejs",{css : "/css/login.css"}) %>
-    <main class="login-main">
-        <section class="login-box">
-                    <h2>Logueate y elegi tu remera favorita.</h2>
-                <form  action="#" method="">
-                    <input type="text" name="usuario" placeholder="Ingrese usuario">
-                    <input type="password" name="contraseña" placeholder="Ingrese su contraseña">
-                    <input class="button-login" type="button" value="Ingresar">
-                    <input class="button-create-account" type="button" value="Crea una cuenta">
-                    
-                </form>
-         
-        </section>
-    </main>
-  <%- include("./partials/footer.ejs")%>
+<main class="login-main">
+    <section class="login-box">
+        <h2>Logueate y elegi tu remera favorita.</h2>
+        <form action="/users/login" method="POST">
+            <input type="email" name="email" placeholder="Ingrese usuario">
+            <% if (locals.errors && errors.email) { %>
+            <div class="text-danger">
+                <%= errors.email.msg %>
+            </div>
+            <% } %>
+            <input type="password" name="password" placeholder="Ingrese su contraseña">
+            <input class="button-login" type="submit" value="Ingresar">
+            <input class="button-create-account" type="button" value="Crea una cuenta">
+        </form>
+
+    </section>
+</main>
+<%- include("./partials/footer.ejs")%>
